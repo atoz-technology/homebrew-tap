@@ -2,16 +2,16 @@
 class Pitwall < Formula
   desc ""
   homepage ""
-  version "0.3.16"
+  version "0.3.18"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.16/pitwall_0.3.16_Darwin_x86_64.tar.gz"
-    sha256 "03106e80968904cb81ef25ab6587933cf5504af694213050c29aa08e552507b9"
+    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.18/pitwall_0.3.18_Darwin_x86_64.tar.gz"
+    sha256 "2ea39f24f7cf440c7e506a48e87317d82862f11ec4b511fb1e4dbcb82dbf1093"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.16/pitwall_0.3.16_Linux_x86_64.tar.gz"
-    sha256 "576435037dff898bdfe07a396103f6f7c76fb9a9653ae29eff38a8a5e7d9d74d"
+    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.18/pitwall_0.3.18_Linux_x86_64.tar.gz"
+    sha256 "e550948046376716a6ffba76a0038a4fd3ea7ed622a2aee15b7857e9f9b3ec7a"
   end
 
   def install
