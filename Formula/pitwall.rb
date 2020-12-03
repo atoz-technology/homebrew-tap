@@ -2,17 +2,15 @@
 class Pitwall < Formula
   desc ""
   homepage ""
-  version "0.3.18"
+  version "0.3.27"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.18/pitwall_0.3.18_Darwin_x86_64.tar.gz"
-    sha256 "2ea39f24f7cf440c7e506a48e87317d82862f11ec4b511fb1e4dbcb82dbf1093"
+    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.27/pitwall_0.3.27_darwin_amd64.tar.gz"
+    sha256 "c5b326469cfcb9165ebdeae4f1b0b9a31583d985842be2113410fd64e95ef5c3"
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.18/pitwall_0.3.18_Linux_x86_64.tar.gz"
-    sha256 "e550948046376716a6ffba76a0038a4fd3ea7ed622a2aee15b7857e9f9b3ec7a"
-  end
+  
+  depends_on "libsodium"
 
   def install
     bin.install "pitwall"
