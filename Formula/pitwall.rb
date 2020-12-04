@@ -2,12 +2,12 @@
 class Pitwall < Formula
   desc ""
   homepage ""
-  version "0.3.27"
+  version "0.4.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.3.27/pitwall_0.3.27_darwin_amd64.tar.gz"
-    sha256 "c5b326469cfcb9165ebdeae4f1b0b9a31583d985842be2113410fd64e95ef5c3"
+    url "https://github.com/atoz-technology/homebrew-tap/releases/download/v0.4.0/pitwall_0.4.0_darwin_amd64.tar.gz"
+    sha256 "552f4a3612ccad25e46365edaf6883ce8d6b1251fe98f2ed145805079d2c6414"
   end
   
   depends_on "libsodium"
